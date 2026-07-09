@@ -78,6 +78,64 @@ public class operadores {
 
         System.out.println(resultado);
 
+        // Operadores Relacionais
+        int numero1 = 1;
+        int numero2 = 2;
+
+        boolean simNao = numero1 == numero2;
+
+        if (numero1 > numero2) {
+            System.out.println("=====Numero1 é menor que numero2====");
+
+        } else {
+            System.out.println("====Nossa condição é falsa====");
+        }
+        System.out.println("numero1 é igual a numero2? " + simNao);
+
+        simNao = numero1 != numero2;
+        System.out.println("numero1 é diferente de numero2? " + simNao);
+
+        simNao = numero1 < numero2;
+        System.out.println("numero1 é maior que numero2? " + simNao);
+
+        // Comparação de dois objetos ou textos:
+        String nome1 = "Anselmo";
+        // String nome2 = "Anselmo";
+        String nome2 = new String("Anselmo");
+
+        System.out.println(nome1 == nome2);
+        System.out.println(nome1.equals(nome2)); // Utilizar .equals()
+
+        Integer numero3 = 130;
+        Integer numero4 = 130;
+
+        System.out.println(numero3 == numero4); // false
+
+        // A razão pela qual o resultado é false, é devido o Java tratar os valores
+        // Como objetos a partir de agora.
+        // Qual a solução ?
+        // Quando queremos comparar objetos, usamos o método equals
+
+        System.out.println(numero3.equals(numero4));
+
+        // Operadores Lógicos:
+        boolean condicao1 = true;
+        boolean condicao2 = true;
+
+        if (condicao1 || condicao2) {
+
+            System.out.println("Pelo menos uma das condições é verdadeira");
+            
+        } if (condicao1 && condicao2) {
+            System.out.println("As duas condições são verdadeiras");
+            
+        } if (condicao1 && (7 > 4)) {
+            
+            System.out.println("As duas condições são verdadeiras");
+            
+        }
+        System.out.println("Fim");
+
     }
 
 }
