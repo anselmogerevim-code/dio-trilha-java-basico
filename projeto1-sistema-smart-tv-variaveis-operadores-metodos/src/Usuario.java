@@ -13,7 +13,7 @@ public class Usuario {
         smarTv.diminuirVolume();
 
         System.out.println("Novo volume: " + smarTv.volume);
-        
+
         System.out.println("Canal atual: " + smarTv.canal);
 
         smarTv.mudarCanal(13);
